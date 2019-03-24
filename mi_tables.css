@@ -15,10 +15,52 @@
 
 /* Table Styles */
 
+table {
+    background-color: linear-gradient(to bottom, rgb(190, 215, 255), black);
+    border: 5px solid gray;
+}
 
+table th,
+table td {
+    border: 3px solid gray;
+    line-height: 1.4em;
+    padding: 8px;
+}
+
+table th {
+    background-color: black;
+    color: rgb(130, 210, 255);
+    font-weight: normal;
+}
+
+table td {
+    color: white;
+    font-size: 0.9em;
+    vertical-align: top;
+}
 
 /* Column Styles */
 
+col #firstCol {
+    column-width: 24%;
+}
+
+col.dataCols {
+    column-width: 19%;
+}
 
 
 /* Table Header Styles */
+
+table > thead > tr {
+    line-height: 60px;
+}
+
+table > thead > tr:first-of-type > th:first-of-type {
+    font-size: 2em;
+}
+
+table > thead > tr > th:not(:first-of-type) {
+    background-color: transparent;
+    font: black;
+}
